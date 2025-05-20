@@ -195,7 +195,7 @@
     "comment" : {
       "en" : "Associates numerical outage record with NTL image from same day as recorded outage record."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "2"
   }, {
     "range" : "1",
@@ -219,7 +219,7 @@
     "comment" : {
       "en" : "Numerical outage record for county at date and time from Eagle-I dataset."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "10"
   }, {
     "iri" : "https://ucf-henat.github.io/GeoOutageOnto/#fromSensor",
@@ -233,7 +233,7 @@
     "comment" : {
       "en" : "Indicates which sensor (instrument) on the satellite captured the image."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "12"
   }, {
     "iri" : "https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite",
@@ -247,7 +247,7 @@
     "comment" : {
       "en" : "Indicates which satellite captured the image."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "14"
   }, {
     "iri" : "https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime",
@@ -261,7 +261,7 @@
     "comment" : {
       "en" : "Date and time for numerical outage record for county from Eagle-I dataset."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "17"
   }, {
     "iri" : "https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap",
@@ -275,7 +275,7 @@
     "comment" : {
       "en" : "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "18"
   }, {
     "iri" : "https://ucf-henat.github.io/GeoOutageOnto/#representsCounty",
@@ -289,7 +289,7 @@
     "comment" : {
       "en" : "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "20"
   } ]
 }
