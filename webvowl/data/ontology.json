@@ -1,0 +1,295 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://example.org/ontology", "http://www.w3.org/ns/ma-ont", "https://www.eoknowledgehub.cn/eo/resource", "http://www.w3.org/2000/01/rdf-schema", "https://dbpedia.org/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "instances" : 0,
+    "union" : [ "4", "5" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "3"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/ns/ma-ont#Image",
+    "baseIri" : "http://www.w3.org/ns/ma-ont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Image"
+    },
+    "subClasses" : [ "7", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://example.org/ontology#outageRecord",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "outageRecord"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://example.org/ontology#OutageMap",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OutageMap",
+      "en" : "Outage Map"
+    },
+    "comment" : {
+      "en" : "Power outage map of county generated using NTL Imagery and Multimodal Outage Detector."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://example.org/ontology#NTLImage",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NTLImage",
+      "en" : "NTL Image"
+    },
+    "comment" : {
+      "en" : "A subclass of ma-ont:Image representing Nighttime Light images from Black Marble Dataset."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b",
+    "baseIri" : "https://www.eoknowledgehub.cn/eo/resource",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://dbpedia.org/ontology/AdministrativeRegion",
+    "baseIri" : "https://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdministrativeRegion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A",
+    "baseIri" : "https://www.eoknowledgehub.cn/eo/resource",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "satellite.2011-061A"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://example.org/ontology#OutageRecord",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OutageRecord",
+      "en" : "Outage Record"
+    },
+    "comment" : {
+      "en" : "Numerical outage record for county at date and time from Eagle-I dataset."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.org/ontology#fromSensor",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "fromSensor",
+      "en" : "from sensor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Indicates which sensor (instrument) on the satellite captured the image."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://example.org/ontology#numberOfOutages",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "numberOfOutages",
+      "en" : "Number of Outages"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Numerical outage record for county at date and time from Eagle-I dataset."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://example.org/ontology#hasOutageMap",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOutageMap",
+      "en" : "has outage map"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://example.org/ontology#fromSatellite",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "fromSatellite",
+      "en" : "from satellite"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Indicates which satellite captured the image."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://example.org/ontology#recordDateTime",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "recordDateTime",
+      "en" : "Outage Record DateTime"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Date and time for numerical outage record for county from Eagle-I dataset."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://example.org/ontology#hasNTLImage",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasNTLImage",
+      "en" : "has NTL image"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Associates numerical outage record with NTL image from same day as recorded outage record."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://example.org/ontology#representsCounty",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "representsCounty",
+      "en" : "represents county"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  } ]
+}
