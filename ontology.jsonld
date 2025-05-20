@@ -2,7 +2,13 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "http://example.org/ontology#NTLImage",
+  "@id" : "http://www.w3.org/ns/ma-ont#Image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://dbpedia.org/ontology/AdministrativeRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#NTLImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -16,7 +22,7 @@
     "@id" : "http://www.w3.org/ns/ma-ont#Image"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#OutageMap",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageMap",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -30,7 +36,7 @@
     "@id" : "http://www.w3.org/ns/ma-ont#Image"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#OutageRecord",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -41,14 +47,14 @@
     "@value" : "Outage Record"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#fromSatellite",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates which satellite captured the image."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#NTLImage"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#NTLImage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -58,14 +64,14 @@
     "@id" : "https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#fromSensor",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#fromSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indicates which sensor (instrument) on the satellite captured the image."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#NTLImage"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#NTLImage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -75,50 +81,50 @@
     "@id" : "https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#hasNTLImage",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Associates numerical outage record with NTL image from same day as recorded outage record."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#outageRecord"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#outageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has NTL image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://example.org/ontology#NTLImage"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#NTLImage"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#hasOutageMap",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#NTLImage"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#NTLImage"
   }, {
-    "@id" : "http://example.org/ontology#OutageRecord"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has outage map"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://example.org/ontology#OutageMap"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageMap"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#numberOfOutages",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Numerical outage record for county at date and time from Eagle-I dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#OutageRecord"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -128,17 +134,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#outageRecord",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#outageRecord",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://example.org/ontology#recordDateTime",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date and time for numerical outage record for county from Eagle-I dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#OutageRecord"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -148,16 +154,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://example.org/ontology#representsCounty",
+  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#representsCounty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://example.org/ontology#OutageRecord"
-  }, {
     "@id" : "http://www.w3.org/ns/ma-ont#Image"
+  }, {
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -166,12 +172,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://dbpedia.org/ontology/AdministrativeRegion"
   } ]
-}, {
-  "@id" : "http://www.w3.org/ns/ma-ont#Image",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://dbpedia.org/ontology/AdministrativeRegion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

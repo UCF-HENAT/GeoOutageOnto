@@ -8,47 +8,47 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://example.org/ontology#fromSatellite
-<http://example.org/ontology#fromSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/ontology#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#NTLImage> .
-<http://example.org/ontology#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A> .
+# https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A> .
 <https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which satellite captured the image."@en .
-<http://example.org/ontology#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "from satellite"@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which satellite captured the image."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "from satellite"@en .
 # 
-# http://example.org/ontology#fromSensor
-<http://example.org/ontology#fromSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/ontology#fromSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#NTLImage> .
-<http://example.org/ontology#fromSensor> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b> .
+# https://ucf-henat.github.io/GeoOutageOnto/#fromSensor
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b> .
 <https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#fromSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which sensor (instrument) on the satellite captured the image."@en .
-<http://example.org/ontology#fromSensor> <http://www.w3.org/2000/01/rdf-schema#label> "from sensor"@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which sensor (instrument) on the satellite captured the image."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> <http://www.w3.org/2000/01/rdf-schema#label> "from sensor"@en .
 # 
-# http://example.org/ontology#hasNTLImage
-<http://example.org/ontology#hasNTLImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/ontology#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#outageRecord> .
-<http://example.org/ontology#outageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/ontology#NTLImage> .
-<http://example.org/ontology#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates numerical outage record with NTL image from same day as recorded outage record."@en .
-<http://example.org/ontology#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#label> "has NTL image"@en .
+# https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> .
+<https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#range> <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates numerical outage record with NTL image from same day as recorded outage record."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#label> "has NTL image"@en .
 # 
-# http://example.org/ontology#hasOutageMap
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#NTLImage> .
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#OutageRecord> .
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/ontology#OutageMap> .
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."@en .
-<http://example.org/ontology#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#label> "has outage map"@en .
+# https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#range> <https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> <http://www.w3.org/2000/01/rdf-schema#label> "has outage map"@en .
 # 
-# http://example.org/ontology#representsCounty
-<http://example.org/ontology#representsCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://example.org/ontology#representsCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#OutageRecord> .
-<http://example.org/ontology#representsCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ma-ont#Image> .
+# https://ucf-henat.github.io/GeoOutageOnto/#representsCounty
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ma-ont#Image> .
 <http://www.w3.org/ns/ma-ont#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#representsCounty> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/AdministrativeRegion> .
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> .
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/AdministrativeRegion> .
 <https://dbpedia.org/ontology/AdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#representsCounty> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."@en .
-<http://example.org/ontology#representsCounty> <http://www.w3.org/2000/01/rdf-schema#label> "represents county"@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> <http://www.w3.org/2000/01/rdf-schema#label> "represents county"@en .
 # 
 # 
 # 
@@ -59,19 +59,19 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://example.org/ontology#numberOfOutages
-<http://example.org/ontology#numberOfOutages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://example.org/ontology#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#OutageRecord> .
-<http://example.org/ontology#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://example.org/ontology#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical outage record for county at date and time from Eagle-I dataset."@en .
-<http://example.org/ontology#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Outages"@en .
+# https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> .
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical outage record for county at date and time from Eagle-I dataset."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Outages"@en .
 # 
-# http://example.org/ontology#recordDateTime
-<http://example.org/ontology#recordDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://example.org/ontology#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/ontology#OutageRecord> .
-<http://example.org/ontology#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://example.org/ontology#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and time for numerical outage record for county from Eagle-I dataset."@en .
-<http://example.org/ontology#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Record DateTime"@en .
+# https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> .
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and time for numerical outage record for county from Eagle-I dataset."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Record DateTime"@en .
 # 
 # 
 # 
@@ -82,28 +82,28 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://example.org/ontology#NTLImage
-<http://example.org/ontology#NTLImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#NTLImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ma-ont#Image> .
-<http://example.org/ontology#NTLImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of ma-ont:Image representing Nighttime Light images from Black Marble Dataset."@en .
-<http://example.org/ontology#NTLImage> <http://www.w3.org/2000/01/rdf-schema#label> "NTL Image"@en .
-# 
-# http://example.org/ontology#OutageMap
-<http://example.org/ontology#OutageMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#OutageMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ma-ont#Image> .
-<http://example.org/ontology#OutageMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Power outage map of county generated using NTL Imagery and Multimodal Outage Detector."@en .
-<http://example.org/ontology#OutageMap> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Map"@en .
-# 
-# http://example.org/ontology#OutageRecord
-<http://example.org/ontology#OutageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://example.org/ontology#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical outage record for county at date and time from Eagle-I dataset."@en .
-<http://example.org/ontology#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Record"@en .
-# 
-# http://example.org/ontology#outageRecord
-# 
 # http://www.w3.org/ns/ma-ont#Image
 # 
 # https://dbpedia.org/ontology/AdministrativeRegion
+# 
+# https://ucf-henat.github.io/GeoOutageOnto/#NTLImage
+<https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ma-ont#Image> .
+<https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of ma-ont:Image representing Nighttime Light images from Black Marble Dataset."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> <http://www.w3.org/2000/01/rdf-schema#label> "NTL Image"@en .
+# 
+# https://ucf-henat.github.io/GeoOutageOnto/#OutageMap
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ma-ont#Image> .
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Power outage map of county generated using NTL Imagery and Multimodal Outage Detector."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Map"@en .
+# 
+# https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical outage record for county at date and time from Eagle-I dataset."@en .
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Record"@en .
+# 
+# https://ucf-henat.github.io/GeoOutageOnto/#outageRecord
 # 
 # https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A
 # 

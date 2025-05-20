@@ -12,95 +12,71 @@
 #    Object Properties
 #################################################################
 
-###  http://example.org/ontology#fromSatellite
-<http://example.org/ontology#fromSatellite> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain <http://example.org/ontology#NTLImage> ;
-                                            rdfs:range <https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A> ;
-                                            rdfs:comment "Indicates which satellite captured the image."@en ;
-                                            rdfs:label "from satellite"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSatellite> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> ;
+                                                           rdfs:range <https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A> ;
+                                                           rdfs:comment "Indicates which satellite captured the image."@en ;
+                                                           rdfs:label "from satellite"@en .
 
 
-###  http://example.org/ontology#fromSensor
-<http://example.org/ontology#fromSensor> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <http://example.org/ontology#NTLImage> ;
-                                         rdfs:range <https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b> ;
-                                         rdfs:comment "Indicates which sensor (instrument) on the satellite captured the image."@en ;
-                                         rdfs:label "from sensor"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#fromSensor
+<https://ucf-henat.github.io/GeoOutageOnto/#fromSensor> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> ;
+                                                        rdfs:range <https://www.eoknowledgehub.cn/eo/resource/sensor.1c58ddb9-2b4c-4fe0-9970-f5fdc7242f6b> ;
+                                                        rdfs:comment "Indicates which sensor (instrument) on the satellite captured the image."@en ;
+                                                        rdfs:label "from sensor"@en .
 
 
-###  http://example.org/ontology#hasNTLImage
-<http://example.org/ontology#hasNTLImage> rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <http://example.org/ontology#outageRecord> ;
-                                          rdfs:range <http://example.org/ontology#NTLImage> ;
-                                          rdfs:comment "Associates numerical outage record with NTL image from same day as recorded outage record."@en ;
-                                          rdfs:label "has NTL image"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> ;
+                                                         rdfs:range <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> ;
+                                                         rdfs:comment "Associates numerical outage record with NTL image from same day as recorded outage record."@en ;
+                                                         rdfs:label "has NTL image"@en .
 
 
-###  http://example.org/ontology#hasOutageMap
-<http://example.org/ontology#hasOutageMap> rdf:type owl:ObjectProperty ;
-                                           rdfs:domain <http://example.org/ontology#NTLImage> ,
-                                                       <http://example.org/ontology#OutageRecord> ;
-                                           rdfs:range <http://example.org/ontology#OutageMap> ;
-                                           rdfs:comment "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."@en ;
-                                           rdfs:label "has outage map"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap
+<https://ucf-henat.github.io/GeoOutageOnto/#hasOutageMap> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> ,
+                                                                      <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> ;
+                                                          rdfs:range <https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> ;
+                                                          rdfs:comment "Associates numerical NTL image or outage record with power outage severity map generated from NTL image."@en ;
+                                                          rdfs:label "has outage map"@en .
 
 
-###  http://example.org/ontology#representsCounty
-<http://example.org/ontology#representsCounty> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <http://example.org/ontology#OutageRecord> ,
-                                                           <http://www.w3.org/ns/ma-ont#Image> ;
-                                               rdfs:range <https://dbpedia.org/ontology/AdministrativeRegion> ;
-                                               rdfs:comment "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."@en ;
-                                               rdfs:label "represents county"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#representsCounty
+<https://ucf-henat.github.io/GeoOutageOnto/#representsCounty> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://www.w3.org/ns/ma-ont#Image> ,
+                                                                          <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> ;
+                                                              rdfs:range <https://dbpedia.org/ontology/AdministrativeRegion> ;
+                                                              rdfs:comment "Links an NTL image, outage map, or outage record to U.S. county (instance of dbo:AdministrativeRegion) that it depicts."@en ;
+                                                              rdfs:label "represents county"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://example.org/ontology#numberOfOutages
-<http://example.org/ontology#numberOfOutages> rdf:type owl:DatatypeProperty ;
-                                              rdfs:domain <http://example.org/ontology#OutageRecord> ;
-                                              rdfs:range xsd:integer ;
-                                              rdfs:comment "Numerical outage record for county at date and time from Eagle-I dataset."@en ;
-                                              rdfs:label "Number of Outages"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages
+<https://ucf-henat.github.io/GeoOutageOnto/#numberOfOutages> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> ;
+                                                             rdfs:range xsd:integer ;
+                                                             rdfs:comment "Numerical outage record for county at date and time from Eagle-I dataset."@en ;
+                                                             rdfs:label "Number of Outages"@en .
 
 
-###  http://example.org/ontology#recordDateTime
-<http://example.org/ontology#recordDateTime> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://example.org/ontology#OutageRecord> ;
-                                             rdfs:range xsd:dateTime ;
-                                             rdfs:comment "Date and time for numerical outage record for county from Eagle-I dataset."@en ;
-                                             rdfs:label "Outage Record DateTime"@en .
+###  https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime
+<https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> ;
+                                                            rdfs:range xsd:dateTime ;
+                                                            rdfs:comment "Date and time for numerical outage record for county from Eagle-I dataset."@en ;
+                                                            rdfs:label "Outage Record DateTime"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://example.org/ontology#NTLImage
-<http://example.org/ontology#NTLImage> rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://www.w3.org/ns/ma-ont#Image> ;
-                                       rdfs:comment "A subclass of ma-ont:Image representing Nighttime Light images from Black Marble Dataset."@en ;
-                                       rdfs:label "NTL Image"@en .
-
-
-###  http://example.org/ontology#OutageMap
-<http://example.org/ontology#OutageMap> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://www.w3.org/ns/ma-ont#Image> ;
-                                        rdfs:comment "Power outage map of county generated using NTL Imagery and Multimodal Outage Detector."@en ;
-                                        rdfs:label "Outage Map"@en .
-
-
-###  http://example.org/ontology#OutageRecord
-<http://example.org/ontology#OutageRecord> rdf:type owl:Class ;
-                                           rdfs:comment "Numerical outage record for county at date and time from Eagle-I dataset."@en ;
-                                           rdfs:label "Outage Record"@en .
-
-
-###  http://example.org/ontology#outageRecord
-<http://example.org/ontology#outageRecord> rdf:type owl:Class .
-
 
 ###  http://www.w3.org/ns/ma-ont#Image
 <http://www.w3.org/ns/ma-ont#Image> rdf:type owl:Class .
@@ -108,6 +84,30 @@
 
 ###  https://dbpedia.org/ontology/AdministrativeRegion
 <https://dbpedia.org/ontology/AdministrativeRegion> rdf:type owl:Class .
+
+
+###  https://ucf-henat.github.io/GeoOutageOnto/#NTLImage
+<https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://www.w3.org/ns/ma-ont#Image> ;
+                                                      rdfs:comment "A subclass of ma-ont:Image representing Nighttime Light images from Black Marble Dataset."@en ;
+                                                      rdfs:label "NTL Image"@en .
+
+
+###  https://ucf-henat.github.io/GeoOutageOnto/#OutageMap
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageMap> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.w3.org/ns/ma-ont#Image> ;
+                                                       rdfs:comment "Power outage map of county generated using NTL Imagery and Multimodal Outage Detector."@en ;
+                                                       rdfs:label "Outage Map"@en .
+
+
+###  https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord
+<https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> rdf:type owl:Class ;
+                                                          rdfs:comment "Numerical outage record for county at date and time from Eagle-I dataset."@en ;
+                                                          rdfs:label "Outage Record"@en .
+
+
+###  https://ucf-henat.github.io/GeoOutageOnto/#outageRecord
+<https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> rdf:type owl:Class .
 
 
 ###  https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A
