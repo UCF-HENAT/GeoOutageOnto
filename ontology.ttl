@@ -30,7 +30,7 @@
 
 ###  https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage
 <https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> ;
+                                                         rdfs:domain <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> ;
                                                          rdfs:range <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> ;
                                                          rdfs:comment "Associates numerical outage record with NTL image from same day as recorded outage record."@en ;
                                                          rdfs:label "has NTL image"@en .
@@ -104,10 +104,6 @@
 <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> rdf:type owl:Class ;
                                                           rdfs:comment "Numerical outage record for county at date and time from Eagle-I dataset."@en ;
                                                           rdfs:label "Outage Record"@en .
-
-
-###  https://ucf-henat.github.io/GeoOutageOnto/#outageRecord
-<https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> rdf:type owl:Class .
 
 
 ###  https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A

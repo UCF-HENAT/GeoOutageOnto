@@ -88,7 +88,7 @@
     "@value" : "Associates numerical outage record with NTL image from same day as recorded outage record."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#outageRecord"
+    "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -133,9 +133,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
-}, {
-  "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#outageRecord",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://ucf-henat.github.io/GeoOutageOnto/#recordDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],

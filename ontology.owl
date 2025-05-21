@@ -50,7 +50,7 @@
 
 
     <ObjectProperty rdf:about="https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage">
-        <rdfs:domain rdf:resource="https://ucf-henat.github.io/GeoOutageOnto/#outageRecord"/>
+        <rdfs:domain rdf:resource="https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord"/>
         <rdfs:range rdf:resource="https://ucf-henat.github.io/GeoOutageOnto/#NTLImage"/>
         <rdfs:comment xml:lang="en">Associates numerical outage record with NTL image from same day as recorded outage record.</rdfs:comment>
         <rdfs:label xml:lang="en">has NTL image</rdfs:label>
@@ -175,13 +175,6 @@
         <rdfs:comment xml:lang="en">Numerical outage record for county at date and time from Eagle-I dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">Outage Record</rdfs:label>
     </Class>
-    
-
-
-    <!-- https://ucf-henat.github.io/GeoOutageOnto/#outageRecord -->
-
-
-    <Class rdf:about="https://ucf-henat.github.io/GeoOutageOnto/#outageRecord"/>
     
 
 

@@ -26,8 +26,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage
 <https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> .
-<https://ucf-henat.github.io/GeoOutageOnto/#outageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> .
 <https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#range> <https://ucf-henat.github.io/GeoOutageOnto/#NTLImage> .
 <https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates numerical outage record with NTL image from same day as recorded outage record."@en .
 <https://ucf-henat.github.io/GeoOutageOnto/#hasNTLImage> <http://www.w3.org/2000/01/rdf-schema#label> "has NTL image"@en .
@@ -102,8 +101,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical outage record for county at date and time from Eagle-I dataset."@en .
 <https://ucf-henat.github.io/GeoOutageOnto/#OutageRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Outage Record"@en .
-# 
-# https://ucf-henat.github.io/GeoOutageOnto/#outageRecord
 # 
 # https://www.eoknowledgehub.cn/eo/resource/satellite.2011-061A
 # 
